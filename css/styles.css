@@ -728,6 +728,7 @@ button {
   line-height: 1.3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  margin-left: 4px;
   color: var(--iris);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
