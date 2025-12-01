@@ -409,6 +409,132 @@ button {
   letter-spacing: 0.02em;
 }
 
+/*FOOTER*/
+
+.footer {
+  background-color: var(--navy-blue);
+  padding: 100px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-text-wrap {
+  margin-right: 120px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer .logo-accent {
+  color: var(--cloud);
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  max-width: 264px;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+
+.footer-subscribe-wrap {
+  margin-left: 80px;
+}
+
+.footer-subscribe-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  min-width: 264px;
+  min-height: 40px;
+  border-radius: 4px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  outline: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer-subscribe-input::placeholder {
+  color: var(--white);
+}
+
+.footer-subscribe-button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  display: flex;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  min-height: 40px;
+  background-color: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: var(--green);
+}
+
+.subscribe-button-icon {
+  fill: var(--white);
+}
+
 /*MODAL*/
 
 .modal-overlay {
@@ -461,15 +587,15 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button-icon {
-  fill: var(--navy-blue);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close-button:hover,
 .modal-close-button:focus {
   background-color: var(--ocean);
   border: none;
+}
+
+.modal-close-button-icon {
+  fill: var(--navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover .modal-close-button-icon,
@@ -505,7 +631,6 @@ button {
 }
 
 .modal-input {
-  font-weight: 400;
   font-size: 12px;
   width: 100%;
   height: 40px;
@@ -539,7 +664,6 @@ button {
 }
 
 .modal-comment {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -615,7 +739,6 @@ button {
 
 .modal-submit-button {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
@@ -633,69 +756,4 @@ button {
 .modal-submit-button:hover,
 .modal-submit-button:focus {
   background-color: var(--ocean);
-}
-
-/*FOOTER*/
-
-.footer {
-  background-color: var(--navy-blue);
-  padding: 100px 0;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-text-wrap {
-  margin-right: 120px;
-}
-
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer .logo-accent {
-  color: var(--cloud);
-}
-
-.footer-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
-  max-width: 264px;
-}
-
-.footer-social-title {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--white);
-  margin-bottom: 16px;
-}
-
-.footer-social-list {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-social-link {
-  width: 40px;
-  height: 40px;
-  background-color: var(--iris);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #31d0aa;
-}
-
-.footer-social-icon {
-  fill: #f4f4fd;
 }
